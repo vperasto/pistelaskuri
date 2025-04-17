@@ -115,7 +115,10 @@ body {
     width: 100%;
     min-height: auto;
   }
-
+  #timeDisplay {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
   .score {
     font-size: 3rem;
   }
