@@ -89,17 +89,23 @@ body {
   border: none;
   border-radius: 5px;
 }
+.possession-container {
+  width: 100%;
+  background: linear-gradient(to right, #004488 50%, #990000 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
 .possession-arrow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  z-index: 10;
+  font-size: 5rem;
+  color: white;
   user-select: none;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
+
 /* Responsiivisuus */
 @media screen and (max-width: 768px) {
   .scoreboard {
@@ -116,6 +122,6 @@ body {
   }
   
   .possession-arrow {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 }
