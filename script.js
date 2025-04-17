@@ -19,7 +19,7 @@ function subtractPoint(team) {
 }
 
 function confirmScoreReset() {
-  if (confirm('Oletko varma että haluat resetoida pisteet?')) {
+  if (confirm('Oletko varma että haluat nollata pisteet?')) {
     scoreBlue = 0;
     scoreRed = 0;
     updateDisplay();
@@ -50,7 +50,7 @@ function pauseTimer() {
 }
 
 function confirmTimerReset() {
-  if (confirm('Oletko varma että haluat resetoida ajan?')) {
+  if (confirm('Oletko varma että haluat nollata ajan?')) {
     pauseTimer();
     totalSeconds = 0;
     updateTimerDisplay();
