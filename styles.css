@@ -89,7 +89,17 @@ body {
   border: none;
   border-radius: 5px;
 }
-
+.possession-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  z-index: 10;
+  user-select: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
 /* Responsiivisuus */
 @media screen and (max-width: 768px) {
   .scoreboard {
@@ -103,5 +113,9 @@ body {
 
   .score {
     font-size: 4rem;
+  }
+  
+  .possession-arrow {
+    font-size: 2.5rem;
   }
 }
