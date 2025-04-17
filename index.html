@@ -1,37 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pistelaskuri</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts (esimerkkinä "Orbitron") -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
+  <div class="timer">
+    <div id="timeDisplay">00:00</div>
+    <div class="timer-buttons">
+      <button onclick="startTimer()">Start</button>
+      <button onclick="pauseTimer()">Pause</button>
+      <button onclick="confirmTimerReset()">Reset</button>
+    </div>
+  </div>
+
+  <div class="scoreboard">
     <div class="team blue">
-      <h2>KOTI</h2>
-      <div class="score" id="scoreA">0</div>
+      <div class="score" id="scoreBlue">0</div>
       <div class="buttons">
-        <button onclick="addScore('A', 1)">+1</button>
-        <button onclick="addScore('A', 2)">+2</button>
-        <button onclick="addScore('A', 3)">+3</button>
-        <button onclick="removeScore('A')">-</button>
+        <button onclick="addPoints('blue', 1)">+1</button>
+        <button onclick="addPoints('blue', 2)">+2</button>
+        <button onclick="addPoints('blue', 3)">+3</button>
+        <button onclick="subtractPoint('blue')">-</button>
       </div>
     </div>
     <div class="team red">
-      <h2>VIERAS</h2>
-      <div class="score" id="scoreB">0</div>
+      <div class="score" id="scoreRed">0</div>
       <div class="buttons">
-        <button onclick="addScore('B', 1)">+1</button>
-        <button onclick="addScore('B', 2)">+2</button>
-        <button onclick="addScore('B', 3)">+3</button>
-        <button onclick="removeScore('B')">-</button>
+        <button onclick="addPoints('red', 1)">+1</button>
+        <button onclick="addPoints('red', 2)">+2</button>
+        <button onclick="addPoints('red', 3)">+3</button>
+        <button onclick="subtractPoint('red')">-</button>
       </div>
     </div>
   </div>
+
   <div class="reset-container">
-    <button onclick="resetScores()">Reset</button>
+    <button onclick="confirmScoreReset()">Resetoi pisteet</button>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
