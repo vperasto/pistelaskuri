@@ -62,5 +62,6 @@ let possessionLeft = true;
 
 function togglePossession() {
   possessionLeft = !possessionLeft;
-  document.getElementById('arrow').textContent = possessionLeft ? '⬅️' : '➡️';
+  const arrow = document.querySelector('.possession-arrow');
+  arrow.textContent = possessionLeft ? '⬅️' : '➡️';
 }
