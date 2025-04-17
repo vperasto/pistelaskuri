@@ -129,4 +129,8 @@ body {
   .possession-arrow {
     font-size: 2rem;
   }
+    .buttons button {
+    font-size: 1rem;
+    padding: 0.3rem 0.7rem;
+  }
 }
