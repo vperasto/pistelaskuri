@@ -56,3 +56,11 @@ function confirmTimerReset() {
     updateTimerDisplay();
   }
 }
+
+// Vuorohallinta
+let possessionLeft = true;
+
+function togglePossession() {
+  possessionLeft = !possessionLeft;
+  document.getElementById('arrow').textContent = possessionLeft ? '⬅️' : '➡️';
+}
