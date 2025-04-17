@@ -9,6 +9,11 @@ body {
   align-items: center;
 }
 
+.header{
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 3rem;
+}
 .timer {
   text-align: center;
   margin: 1rem 0;
