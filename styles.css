@@ -121,9 +121,9 @@ body {
   }
   .possession-container {
     background: linear-gradient(to bottom, #004488 50%, #990000 50%);
-    padding: 2rem 0;
+    padding: 0;
   }
   .possession-arrow {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
